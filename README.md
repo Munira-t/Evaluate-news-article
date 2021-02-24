@@ -1,0 +1,2 @@
+# Evaluate-news-article
+A web tool that allows users to perform sentiment analysis using Natural Language Processing (NLP) to analyze the author's emotions on particular articles or blogs. The tool will require the user to enter an URL of an article /blog, then will return data from [meaningcloud API](https://www.meaningcloud.com/products/sentiment-analysis) that shows the author's expression whether it is positive, negative or neutral.
