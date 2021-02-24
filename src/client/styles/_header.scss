@@ -1,0 +1,137 @@
+@import 'config';
+
+/* Header */
+header {
+  grid-area: header;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  grid-area: header;
+}
+
+/* navigation bar section */
+.header__nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-family: $font-stack;
+}
+
+.header-nav-items__logo {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 45px;
+  color: $primary-color;
+}
+
+.header-nav-items__titles {
+  display: flex;
+  gap: 3px;
+  margin-right: 20px;
+  list-style: none;
+  font-size: 13px;
+  padding: 10px 40px;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    margin: 2px 3px;
+
+    &:hover {
+      color: $primary-color;
+      cursor: pointer;
+    }
+  }
+}
+
+/* Header title */
+.header__title {
+  // padding-left: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title__img {
+  margin-top: 40px;
+  width: 250px;
+  height: 250px;
+}
+
+.header-title__subject {
+  margin: 15px 0px;
+  font-family: $font-header;
+  color: $primary-color;
+  font-weight: 300;
+  font-size: 20px;
+  position: relative;
+  padding-bottom: 0.5rem;
+  letter-spacing: 4.4px;
+}
+
+.header-title__brif {
+  margin: 20px 0px;
+  padding-bottom: 60px;
+  font-size: 13px;
+  width: 200px;
+  color: $secondary-color;
+  text-align: center;
+  line-height: 19px;
+}
+
+/* Tablet Screen */
+@media screen and (min-width: 768px) {
+  .header-nav-items__titles {
+    display: flex;
+    justify-items: center;
+    list-style: none;
+    margin-right: 10%;
+    font-size: 15px;
+
+    a {
+      margin: 4px 10px;
+    }
+  }
+  .header-title__img {
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+  }
+  .header-title__subject {
+    font-weight: 300;
+    font-size: 24px;
+  }
+
+  .header-title__brif {
+    width: 280px;
+    line-height: 21px;
+  }
+}
+
+/* Desktop screen */
+@media screen and (min-width: 1024px) {
+  .header-nav-items__titles {
+    margin-right: 7em;
+    font-size: 17px;
+    a {
+      margin: 4px 10px;
+    }
+  }
+
+  .header-title__img {
+    margin-top: 60px;
+    width: 340px;
+    height: 340px;
+  }
+  .header-title__subject {
+    font-weight: 400;
+    font-size: 26px;
+  }
+
+  .header-title__brif {
+    width: 290x;
+    line-height: 23px;
+  }
+}

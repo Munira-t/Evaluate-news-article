@@ -1,0 +1,105 @@
+@import 'config';
+
+@import 'config';
+
+.result {
+  padding: 75px 0px;
+}
+
+.result__content {
+  display: flex;
+  justify-content: space-between;
+  background-color: lighten($secondary-color, 50%);
+  border: 1.2px solid lighten($secondary-color, 50%);
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  border-radius: 7px;
+  margin: 30px 60px;
+
+  p {
+    margin: 7px 0;
+    color: lighten($secondary-color, 10%);
+    font-family: $font-stack;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .result-content__tag {
+    text-align: left;
+    margin: 18px 0px 5px 22px;
+    p {
+      white-space: pre;
+      &::after {
+        content: '\A................................';
+        bottom: 0;
+        height: 1.5px;
+        margin-bottom: 20px;
+        width: 120px;
+        color: lighten($secondary-color, 20%);
+      }
+    }
+  }
+
+  .result-content_score {
+    text-align: right;
+    margin: 18px 22px 5px 0px;
+    color: darken($primary-color, 10%);
+    p {
+      color: darken($primary-color, 10%);
+      white-space: pre;
+      &::after {
+        content: '\A................................';
+        bottom: 0;
+        height: 1.5px;
+        margin-bottom: 20px;
+        width: 120px;
+        color: lighten($secondary-color, 20%);
+      }
+    }
+  }
+}
+
+/* mobile screen */
+@media screen and (min-width: 460px) {
+  .result__content {
+    margin: 30px 95px;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .result__content {
+    margin: 30px 120px;
+  }
+}
+
+/* Tablet Screen */
+@media screen and (min-width: 768px) {
+  .result__content {
+    margin: 30px 210px;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .result__content {
+    margin: 30px 260px;
+  }
+}
+
+/* Desktop screen */
+
+@media screen and (min-width: 930px) {
+  .result__content {
+    margin: 30px 320px;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .result__content {
+    margin: 30px 380px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .result__content {
+    margin: 30px 470px;
+  }
+}
