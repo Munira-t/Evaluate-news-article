@@ -34,12 +34,14 @@ app.use(express.static('dist'))
 /* Transfers files at the given path when GET request is made to the homepage */
 app.get('/', (req, res) => {
   /* Prod mode path. */
-  // res.sendFile('dist/index.html')
+  res.sendFile('dist/index.html')
   /* Dev mode path. */
-  res.sendFile(path.resolve('src/client/views/index.html'))
+  // res.sendFile(path.resolve('src/client/views/index.html'))
 })
 
-/* Setup server to run on port: 8087 */
+/**  
+ * Setup server to run on port: 8087 
+ * Listen on this port process.env.PORT for heroku */
 const port = 8087
 app.listen(port, (err) => {
   if (err) throw new Error(err)
