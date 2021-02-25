@@ -25,6 +25,6 @@ describe('Testing the isURL functionality', () => {
     /* Test Valid URL */
     expect(isURL('https://www.udacity.com/')).toBe(true)
     /* Test unvalid URL */
-    expect(isURL('htrsstps://www.udacity.com/')).toBe(false)
+    expect(isURL('htrs$$stps://www.udacity.com/')).toBe(false)
   })
 })

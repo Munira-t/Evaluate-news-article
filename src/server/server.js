@@ -4,8 +4,8 @@ dotenv.config()
 
 /* Require path to provide useful functionality to access and interact with the file system */
 const path = require('path')
-/* Require express to run server and routes, body-parser, and cors. */
 
+/* Require express to run server and routes, body-parser, and cors. */
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
@@ -34,15 +34,13 @@ app.use(express.static('dist'))
 /* Transfers files at the given path when GET request is made to the homepage */
 app.get('/', (req, res) => {
   /* Prod mode path. */
-  res.sendFile('dist/index.html')
+  // res.sendFile('dist/index.html')
   /* Dev mode path. */
-  // res.sendFile(path.resolve('src/client/views/index.html'))
+  res.sendFile(path.resolve('src/client/views/index.html'))
 })
 
-/**  
- * Setup server to run on port: 8087 
- * Listen on this port process.env.PORT for heroku */
-const port = process.env.PORT || 8087
+/* Setup server to run on port: 8087 */
+const port = 8087
 app.listen(port, (err) => {
   if (err) throw new Error(err)
   console.log(`Server is running on port https://localhost:${port} !!`)
@@ -53,7 +51,6 @@ app.listen(port, (err) => {
  * - meaningcloud API base URL.
  * - meaningcloud API key.
  * 
- *
  */
 const baseURL = 'https://api.meaningcloud.com/sentiment-2.1'
 const meaningCloudKey = process.env.MC_API_KEY
