@@ -52,7 +52,12 @@ npm install
 |   `npm run start`    |  Run project  |
 |    `npm run test`    | test project  |
 
+## Demo
+
+[Sentiment Analyzer Live app](https://sentiment-analyzer-m.herokuapp.com/)
+
 ## Acknowledgements
 
 - [Font Awesome](https://fontawesome.com)
 - [unDraw](https://undraw.co/)
+- [Heroku](https://heroku.com)
