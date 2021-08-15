@@ -55,6 +55,7 @@ npm install
 ## Demo
 
 [Sentiment Analyzer Live app](https://sentiment-analyzer-m.herokuapp.com/)
+![Sentiment Analyzer Gif](https://user-images.githubusercontent.com/64756671/129494117-97facec2-7f87-46e6-9c5d-5790ea6390d2.gif)
 
 ## Acknowledgements
 
