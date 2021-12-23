@@ -12,8 +12,7 @@ module.exports = {
   },
   mode: 'production',
   module: {
-    rules: [
-      {
+    rules: [{
         test: '/.js$/',
         exclude: /node_modules/,
         loader: 'babel-loader',
@@ -24,15 +23,13 @@ module.exports = {
       },
       {
         test: /\.(jpg|jpeg|gif|png|svg|webp)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: './images',
-              name: '[name].[ext]',
-            },
+        use: [{
+          loader: 'file-loader',
+          options: {
+            outputPath: './images',
+            name: '[name].[ext]',
           },
-        ],
+        }, ],
       },
     ],
   },
