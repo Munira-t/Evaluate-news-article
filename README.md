@@ -53,7 +53,7 @@ npm install
 |    `npm run test`    | test project  |
 
 ## Demo
-
+![Sentiment Analyzer Live app](entiment Analyzer.gif)
 [Sentiment Analyzer Live app](https://sentiment-analyzer-m.herokuapp.com/)
 
 ## Acknowledgements
